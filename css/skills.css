@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+body{
+    background-color:black;
+
+}
+.navi {
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.png);
+    background-size: cover;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a {
+    color: #8d8d92;
+    position: relative;
+    padding: 5px 0;
+  }
+  nav ul li a:hover {
+    color: #fd4766;
+  }
+  nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: 0.3s;
+    bottom: 0;
+  }
+  nav ul li a:hover:after {
+    width: 100%;
+  }
+  a{
+    color: aliceblue;
+    text-decoration: none;
+  }
+ 
+  .progressbar{
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    bottom : 0;
+  }
+  
+  progress {
+    color: #fd4766;
+       border: 0;
+      width: 400px;
+    height: 30px;
+  }
+  
+  progress::-webkit-progress-bar{
+    background: #fd47654b;
+     border:2px solid #fd4765a2;
+    border-radius:20px;
+  }
+  /*rgba(37, 206, 135, 1)*/
+  progress::-webkit-progress-value {
+    background:  #fd4765a2   ;
+     border: 0;
+    border-radius:20px;
+  }
+  
+  progress::-moz-progress-bar {
+    background: lightcolor;
+       border: 0;
+  }
+
+ 
